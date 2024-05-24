@@ -1,0 +1,409 @@
+/* STYLE GLOBALE */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+  background-color: rgb(31, 32, 57);
+}
+
+body .header, .footer {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 50px;
+}
+
+body .header {
+  display: flex;
+  flex-direction: column;
+}
+
+body .header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body .header .container .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+body .footer {
+  display: flex;
+  flex-direction: column;
+}
+
+body .footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+body .footer .container .lien-icone {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+}
+
+body .footer .container .lien-social {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+}
+
+body .footer .container .final-line {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin: auto;
+  margin: 50px 0px 0px 0px;
+}
+
+body a {
+  color: rgb(36, 36, 36);
+  text-decoration: none;
+}
+
+body a:hover {
+  opacity: 0.5;
+}
+
+body .title {
+  font-size: 3.5em;
+  color: rgb(165, 180, 252);
+  font-family: "Montserrat", sans-serif;
+}
+
+body p, li {
+  font-size: 1.1em;
+  color: rgb(249, 248, 255);
+}
+
+body .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(142, 134, 181), rgb(172, 174, 237));
+  color: white;
+  border-radius: 50px;
+  padding: 20px 30px;
+  margin-top: 50px;
+}
+
+body .contact:hover {
+  background: linear-gradient(rgb(105, 100, 132), rgb(135, 136, 186));
+  text-decoration: none;
+}
+
+section {
+  padding: 60px;
+}
+
+nav a {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 996px) {
+  body .header, .footer {
+    padding: 20px 20px;
+  }
+
+  body .header .container .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body .header .container .navbar a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  body .header .container .navbar img {
+    margin-bottom: 20px;
+  }
+
+  body .title {
+    font-size: 2em;
+  }
+
+  body .footer .container .final-line {
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin: auto;
+  }
+}
+
+/* INDEX */
+
+body .main-index .section-index {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+
+body .main-index .section-index .block-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 80px;
+}
+
+body .main-index .section-index .block-index .title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+body .main-index .section-index .block-index p {
+  margin-bottom: 30px;
+}
+
+body .main-index .section-index .block-index em {
+  color: rgb(238, 174, 202);
+  font-style: normal;
+}
+
+body .main-index .section-index-photos {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+body .main-index .section-index-photos .subtitle {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+
+body .main-index .section-index-photos .block-index-photo {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+body .main-index .section-index-contact .subtitle {
+  color: rgb(165, 180, 252);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body .main-index .section-index-contact .form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  color: rgb(255, 255, 255);
+}
+
+body .main-index .section-index-contact .form-item {
+  display: flex;
+  gap: 20px;
+}
+
+body .main-index .section-index-contact .form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+body .main-index .section-index-contact input, textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+body .main-index .section-index-contact label {
+  margin-bottom: 10px;
+}
+
+body .main-index .section-index-contact input[type="submit"] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 996px) {
+  body .main-index .section-index {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body .main-index .section-index .block-index {
+    padding-right: 0;
+    text-align: center;
+    order: 2;
+  }
+
+  body .main-index .section-index img {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  body .main-index .section-index-photos {
+    padding: 20px;
+  }
+
+  body .main-index .section-index-photos .block-index-photo {
+    flex-direction: column;
+  }
+
+  body .main-index .section-index-contact {
+    padding: 50px 20px;
+  }
+
+  body .main-index .section-index-contact .form-item {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* A PROPOS */
+
+body .main-a-propos .section-a-propos .title {
+  text-align: center;
+}
+
+body .main-a-propos .section-a-propos .contenu {
+  border-right: 1px solid rgb(142, 134, 181);
+  border-bottom: 1px solid rgb(142, 134, 181);
+  padding: 50px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+body .main-a-propos .section-a-propos .contenu .subtitle {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+body .main-a-propos .section-a-propos .block-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+body .main-a-propos .section-a-propos-tarifs .subtitle {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 80px;
+}
+
+body .main-a-propos .section-a-propos-tarifs .table {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+body .main-a-propos .section-a-propos-tarifs .table td, th {
+  padding: 15px;
+  border: 1px solid rgb(165, 180, 252);
+}
+
+body .main-a-propos .section-a-propos-tarifs .table td {
+  padding: 80px;
+}
+
+@media screen and (max-width: 996px) {
+  body .main-a-propos .section-a-propos-tarifs {
+    display: none;
+  }
+}
+
+/* PORTFOLIO */
+
+body .main-portfolio .section-portfolio .title {
+  text-align: center;
+}
+
+body .main-portfolio .section-portfolio-photos {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+body .main-portfolio .section-portfolio-photos .subtitle {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 70px;
+}
+
+body .main-portfolio .section-portfolio-photos .subtitle-2 {
+  margin-top: 50px;
+}
+
+body .main-portfolio .section-portfolio-photos .paysages,
+body .main-portfolio .section-portfolio-photos .portraits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+body .main-portfolio .section-portfolio-photos .paysages .photo-block,
+body .main-portfolio .section-portfolio-photos .portraits .photo-block {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+body .main-portfolio .section-portfolio-photos .section-portfolio-item {
+  position: relative;
+  width: 30%;
+  height: 300px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body .main-portfolio .section-portfolio-photos .paysages .section-portfolio-item img, 
+body .main-portfolio .section-portfolio-photos .portraits .section-portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body .main-portfolio .section-portfolio-photos .section-portfolio-item .photo-hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body .main-portfolio .section-portfolio-photos .section-portfolio-item:hover .photo-hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 996px) {
+  body .main-portfolio .section-portfolio-photos .section-portfolio-item .photo-hover {
+    text-align: center;
+  }
+}
+
+/* Style.css */
